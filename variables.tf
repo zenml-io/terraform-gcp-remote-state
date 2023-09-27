@@ -6,6 +6,7 @@ variable "region" {
 
 variable "project_id" {
   description = "The project ID to deploy resources to"
+  type        = string
 }
 
 variable "bucket_name" {
@@ -16,4 +17,11 @@ variable "bucket_name" {
 variable "force_destroy" {
   description = "A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error"
   default     = false
+  type        = bool
+}
+
+variable "enable_versioning" {
+  description = "A boolean that indicates all objects should be versioned"
+  default     = true
+  type        = bool
 }

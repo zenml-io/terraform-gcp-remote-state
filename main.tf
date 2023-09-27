@@ -3,7 +3,7 @@ resource "google_storage_bucket" "terraform_state" {
   location = var.region
 
   versioning {
-    enabled = true
+    enabled = var.enable_versioning
   }
 
   # set to true when you want to delete the bucket
