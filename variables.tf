@@ -25,3 +25,9 @@ variable "enable_versioning" {
   default     = true
   type        = bool
 }
+
+variable "labels" {
+  description = "A map of bucket labels to add to all resources"
+  type        = map(string)
+  default     = {}
+}
