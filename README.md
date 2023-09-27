@@ -15,7 +15,7 @@ These features are supported:
 
 ```hcl
 module "gcp-remote-state" {
-  source = "zenml-io/terraform-gcp-remote-state"
+  source = "zenml-io/remote-state/gcp"
   # We recommend pinning every module to a specific version
   # version = "x.x.x"
 
