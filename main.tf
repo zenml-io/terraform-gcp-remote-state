@@ -11,4 +11,6 @@ resource "google_storage_bucket" "terraform_state" {
 
   # Ensure no public access
   uniform_bucket_level_access = true
+
+  labels = var.labels
 }
