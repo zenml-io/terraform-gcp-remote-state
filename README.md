@@ -9,6 +9,7 @@ These features are supported:
 - custom bucket naming
 - specify versioning policy
 - specify whether to force destroy or not
+- custom bucket labels (key:value pairs) to assign to the bucket
 
 ## Usage
 
