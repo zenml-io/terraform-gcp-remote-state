@@ -10,7 +10,7 @@ resource "google_storage_bucket" "terraform_state" {
   force_destroy = var.force_destroy
 
   # Ensure no public access
-  uniform_bucket_level_access = true
+  uniform_bucket_level_access = var.block_public_access
 
   labels = var.labels
 }

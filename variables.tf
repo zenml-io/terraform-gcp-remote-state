@@ -21,6 +21,12 @@ variable "enable_versioning" {
   type        = bool
 }
 
+variable "block_public_access" {
+  description = "A boolean that indicates to block public access to the bucket"
+  default     = true
+  type        = bool
+}
+
 variable "labels" {
   description = "A map of bucket labels to add to all resources"
   type        = map(string)
