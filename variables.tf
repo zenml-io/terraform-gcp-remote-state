@@ -4,11 +4,6 @@ variable "region" {
   type        = string
 }
 
-variable "project_id" {
-  description = "The project ID to deploy resources to"
-  type        = string
-}
-
 variable "bucket_name" {
   description = "The name of the GCS bucket to deploy"
   type        = string
